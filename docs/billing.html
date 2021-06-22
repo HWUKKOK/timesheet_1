@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Weekly Timesheet Billing</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="bootstrap.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+      <div class="container">
+        <header class="d-flex flex-wrap align-items-center">
+    
+          <div class="col-md-6">
+            <!-- <ul class="nav col-12 col-md-auto mb-2 justify-content-start mb-md-0">
+              <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
+            </ul> -->
+          </div>
+    
+          <div class="col-md-6 text-end">
+            <span class="badge bg-dark">Account</span>         
+            <button id="billing-logout-btn" type="button" class="btn btn-green">Logout</button>
+          </div>
+
+        </header>
+      </div>
+
+    <section id="page-content" class="py-5 bg-grey">
+        <div class="container ">
+            
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="mb-3">Approved Weekly Timesheet</h2>
+                    <h3 class="mb-3">Talent: John Doe</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <table id="timesheet-table-approval" class="table bg-green text-white text-center">
+                    
+                  <thead>
+                      <tr class="pricing-title">
+                        <th scope="col">Task No.</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Time Start</th>
+                        <th scope="col">Time End</th>
+                        <th scope="col">Duration (minutes)</th>
+                        <th scope="col">Task Description</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      
+              
+                      <tr>
+                          <td id="total-time-completion-approval" colspan="7" class="text-center">Total Completed Duration: 0 Hour 0 minutes</td>
+                      </tr>
+                      <!-- <tr class="pricing-item">
+                          <td colspan="7" class="text-center"><button onclick="confirm_approval()" id="btn-approve" type = "button" class = "btn bg-white text-green">Confirm</button></td>
+                      </tr> -->
+                    </tbody>
+
+                </table>
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer class="bg-green">
+        <div class="container">
+            <div class="row pt-4 text-white">
+                <div class="col-md-12 text-center text-md-center">
+                    <p><span class="fw-bold">HWUK KOK &copy;</span> Copyright 2021</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+        <script src="bootstrap.js"></script>
+        <script src="billing.js"></script>
+    </body>
+</html>

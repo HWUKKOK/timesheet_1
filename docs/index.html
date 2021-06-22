@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Weekly Timesheet Login</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="bootstrap.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="login-style.css">
+    </head>
+    <body>     
+       
+        <section id="page-content" class="py-4 ">
+           <div class="container my-4">
+               <div class="row gx-lg-5 ">
+                   <div class="col-lg-6 mb-5">
+                        <img src="section-2-bg.jpg" class="img-fluid">
+                   </div>
+                   <div class="col-lg-6 text-center ">
+                       <h3 class="mt-5">Welcome to Weekly Timesheet System</h3>        
+                       <button onclick="document.getElementById('id01').style.display='block'" type = "button" class = "btn btn-green mt-2">Login</button>
+                   </div>
+               </div>
+           </div>
+        </section>
+
+
+       <!-- Login Modal -->
+       <div id="id01" class="modal">
+  
+            <div class="row align-items-center justify-content-center mb-5">
+                <div class="col-6">
+
+                    <form id="login-form" class="row modal-content animate" action="" method="post">
+                        <div class="imgcontainer">
+                            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                            <img src="cat_profile.jpg" alt="Avatar" class="avatar">
+                        </div>
+                    
+                        <div class="container">
+                            <label for="uname"><b>Username</b></label>
+                            <input type="text" placeholder="Enter Username" name="uname" required>
+                    
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+                            
+                            <div class="col-12 text-center">
+                                <button id="login-form-submit" type="submit" class="btn btn-green">Login</button>
+                                <label>
+                                <input type="checkbox" checked="checked" name="remember"> Remember me
+                                </label>
+                            </div>
+                        </div>
+                    
+                        <div class="container" style="background-color:#f1f1f1">
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                            <span class="psw">Forgot <a href="#">password?</a></span>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        
+        </div><!-- Modal -->
+
+
+        <footer class="bg-green">
+            <div class="container">
+                <div class="row pt-4 text-white">
+                    <div class="col-md-12 text-center text-md-center">
+                        <p><span class="fw-bold">HWUK KOK &copy;</span> Copyright 2021</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <script src = "bootstrap.js"></script>
+        <script src="login.js"></script>
+    </body>
+</html>
